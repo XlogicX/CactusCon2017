@@ -1,0 +1,57 @@
+;slide_frame.h - 94 bytes
+;This routine draws the slide frame with title at the top
+
+draw_border:
+;Draw Border
+   ;Part of top border before title   
+   mov cx, 78              ;init cx to 78, screen lenth minus some graphic chars
+   sub cl, [titlemessage]  ;subtract title length
+   shr cx, 1               ;divide by 2
+   mov ax, 0x2fd5          ;green background with upper left corner char
+   xor di, di              ;init coordinate
+   stosw                   ;push the above char to video memory   
+   mov al, 0xcd            ;= character
+   rep stosw               ;push it to video memory
+   mov al, 0xb9            ;╣ character
+   stosw                   ;push the above char to video memory
+
+
+   mov si, titlemessage    ;fetch the text
+   mov ah, 0xA1            ;color
+   call slide_line
+   mov ax, 0x2fcc                ;finish with ╠ character (and return color scheme)
+   stosw                         ;put it in video memory
+
+   mov cx, 78              ;init cx to 78, screen lenth minus some graphic chars
+   sub cl, [titlemessage]  ;subtract title length
+   shr cx, 1               ;divide by 2
+   mov al, 0xcd          ;green background with ═ character
+   rep stosw               ;push it to video memory 
+
+   ;Upper Right Corner
+   mov di, 158
+   mov al, 0xb8            ;╕ symbol
+   stosw
+
+   ;The Sides with the | symbol
+   mov cl, 23     ;23 rows worth
+   sides:
+   mov al, 0xb3   ;the | symbol
+   stosw          ;display it
+   add di, 156    ;move all the way to the right side
+   stosw          ;display it again
+   dec cl         ;next row
+   jne sides      ;go again if not to the end
+
+   ;Bottom row
+   mov al, 0xd4            ;Bottom Left Corner
+   stosw                   ;Display it
+   mov cx, 78              ;init cx to 80, bottom row length
+   mov al, 0xcd            ;green background with ═ character
+   rep stosw               ;push it to video memory
+   mov al, 0xbe            ;Bottom Right Corner
+   stosw                   ;push the above char to video memory
+
+ret
+
+%include 'slide_line.h'
