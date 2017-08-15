@@ -1,26 +1,26 @@
 # CactusCon2017
 
-== Slides in this order for now ==
-SLIDE_Intro.bin
-SLIDE_Why.bin
-SLIDE_BIOS_Sig.bin
-SLIDE_QEMU.bin
-SLIDE_VBox.bin
-SLIDE_Stack.bin
-SLIDE_Video.bin
-SLIDE_TextMode.bin
-SLIDE_Colors.bin
-SLIDE_ColorDemo.bin
-SLIDE_Regs01.bin
-SLIDE_Regs02.bin
-SLIDE_Delay.bin
-SLIDE_Keys01.bin
-SLIDE_Keys02.bin
-SLIDE_Keys03.bin   
-SLIDE_Keys04.bin 
-SLIDE_Random.bin
-SLIDE_Debugging.bin
-SLIDE_Objdump.bin
-SLIDE_GDB.bin
-SLIDE_Step.bin
+## Slides in this order for now
+SLIDE_Intro.bin <br>
+SLIDE_Why.bin <br>
+SLIDE_BIOS_Sig.bin <br>
+SLIDE_QEMU.bin <br>
+SLIDE_VBox.bin <br>
+SLIDE_Stack.bin <br>
+SLIDE_Video.bin <br>
+SLIDE_TextMode.bin <br>
+SLIDE_Colors.bin <br>
+SLIDE_ColorDemo.bin <br>
+SLIDE_Regs01.bin <br>
+SLIDE_Regs02.bin <br>
+SLIDE_Delay.bin <br>
+SLIDE_Keys01.bin <br>
+SLIDE_Keys02.bin <br>
+SLIDE_Keys03.bin <br>
+SLIDE_Keys04.bin  <br>
+SLIDE_Random.bin <br>
+SLIDE_Debugging.bin <br>
+SLIDE_Objdump.bin <br>
+SLIDE_GDB.bin <br>
+SLIDE_Step.bin <br>
 SLIDE_Dump.bin
