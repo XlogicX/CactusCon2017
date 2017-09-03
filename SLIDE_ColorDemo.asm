@@ -22,7 +22,7 @@
 ;Draw Border
    ;Fill in all black
    mov cx, 0x07d0    ;whole screens worth
-   mov ax, 0x0020    ;empty blue background
+   mov ax, 0x0020    ;empty black background
    xor di, di        ;start at first pixel
    rep stosw         ;push it to video memory
 
