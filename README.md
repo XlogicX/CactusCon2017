@@ -1,6 +1,7 @@
 # CactusCon2017
 
 ## Slides in this order for now
+SLIDE_Title.bin <br>
 SLIDE_Intro.bin <br>
 SLIDE_Why.bin <br>
 SLIDE_BIOS_Sig.bin <br>
