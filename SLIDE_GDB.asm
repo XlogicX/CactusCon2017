@@ -20,6 +20,8 @@ mov di, 160 * 8 + 16		;where to place cursor
 mov si, line04				;fetch the text
 call slide_line
 
+;rdpmc
+
 mov di, 160 * 10 + 16		;where to place cursor
 mov si, line05				;fetch the text
 call slide_line

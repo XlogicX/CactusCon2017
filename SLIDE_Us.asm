@@ -57,5 +57,6 @@ line08 db 0x15, 'CRC16: 0x7A69 (31337)'
 titlemessage db 0x08, 'About Us'
 
 ;BIOS sig and padding
-times 510-($-$$) db 0
+times 508-($-$$) db 0
+dw 0xEFD2
 dw 0xAA55
